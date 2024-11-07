@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Sizing</title>
-  </head>
-  <body>
-    <!-- Width -->
 
-    <!-- Percentages -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Sizing</title>
+</head>
 
-    <!-- Width of the viewport -->
+<body>
+  <!-- Width -->
+  <div class="bg-blue-800 w-48 text-white mt-4">Sample Text</div>
+  <div class="bg-blue-800 w-96 text-white mt-4">Sample Text</div>
+  <!-- Percentages -->
+  <div class="bg-red-800 w-1/2 text-white mt-4">Sample Text</div>
+  <div class="bg-red-800 w-1/3 text-white mt-4">Sample Text</div>
 
-    <!-- 100% of container -->
+  <!-- Width of the viewport -->
+  <div class="bg-green-800 w-screen mt-4 text-white">View Port</div>
 
-    <!-- min/max content -->
+  <!-- 100% of container -->
+  <div class="bg-slate-800 text-white mt-4 w-full">Containter text</div>
 
-    <!-- Arbitrary width -->
+  <!-- min/max content -->
+  <div class="bg-black mt-4 text-white max-w-sm mx-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Officiis
+    quidem nemo ipsam dolores minus, vero molestias quasi. Ipsum, nihil ut illo numquam distinctio sunt fuga vitae sed
+    aspernatur, magni eaque!</div>
 
-    <!-- Max Width -->
+  <!-- Arbitrary width -->
 
-    <!-- Height (Most of the same options as widths) -->
+  <!-- Max Width -->
 
-    <!-- Min Height -->
+  <!-- Height (Most of the same options as widths) -->
 
-    <!-- Max Height -->
+  <!-- Min Height -->
+  <div class="flex items-end">
+    <div class="bg-red-800 max-w-48 text-white h-32">Hello 1</div>
+    <div class="bg-red-800 max-w-48 text-white h-60">Hello 2</div>
+    <div class="bg-red-800 max-w-48 text-white h-96">Hello 3</div>
+  </div>
 
-    <!-- Full screen height -->
-  </body>
+  <!-- Max Height -->
+
+  <!-- Full screen height -->
+  <div class="bg-purple-700 h-screen text-white mt-4 text-center">Sample view port</div>
+</body>
+
 </html>
 
 <!-- 

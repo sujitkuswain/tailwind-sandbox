@@ -1,37 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
-  </head>
-  <body>
-    <!-- Positioning -->
 
-    <!-- Top left corner -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>TailwindCSS</title>
+</head>
 
+<body>
+  <!-- Positioning -->
+  <div class="relative h-32 w-1/2 bg-blue-400">
+    <p class="bg-red-300 text-white">Relative</p>
+    <div class="absolute bottom-0 right-0 bg-green-800">
+      <p class="text-white">Absolute</p>
+    </div>
+  </div>
+  <!-- Top left corner -->
+  <div class="flex items-end">
+    <div class="mt-4 h-48 w-48 bg-red-400 relative mr-4">
+      <div class="absolute h-16 w-16 bg-red-800 top-0 left-0"></div>
+    </div>
     <!-- Top right corner -->
-
+    <div class="relative h-32 w-32 bg-blue-300 mt-4 mr-4">
+      <div class="absolute h-16 w-16 bg-blue-700 top-0 right-0"></div>
+    </div>
     <!-- Bottom left corner -->
-
+    <div class="relative bg-green-300 h-60 w-60 mt-4 mr-4">
+      <div class="absolute w-32 h-32 bg-green-900 bottom-0 left-0"></div>
+    </div>
     <!-- Bottom right corner -->
+    <div class="relative h-32 w-32 bg-purple-300 mt-4 mr-4">
+      <div class="absolute bg-purple-900 h-8 w-8 bottom-0 right-0"></div>
+    </div>
+  </div>
 
-    <!-- Span top edge -->
-
+  <!-- Span top edge -->
+  <div class="flex">
+    <div class="relative bg-red-300 h-32 w-1/2 mt-8 mr-2">
+      <div class="absolute bg-green-900 top-0 inset-x-0 h-8"></div>
+    </div>
     <!-- Span left edge -->
-
+    <div class="relative bg-yellow-300 mt-4 h-32 w-1/2 mr-2">
+      <div class="absolute bg-blue-600 w-8 inset-y-0 left-0"></div>
+    </div>
     <!-- Span right edge -->
-
+    <div class="relative bg-purple-300 h-48 mt-4 w-1/2 mr-2">
+      <div class="absolute bg-red-800 w-16 right-0 inset-y-0">
+      </div>
+    </div>
     <!-- Span bottom edge -->
+    <div class="relative bg-blue-400 h-32 w-1/2 mt-4 mr-2">
+      <div class="absolute bg-yellow-800 h-8 bottom-0 inset-x-0"></div>
+    </div>
+  </div>
 
-    <!-- Display Classes -->
+  <!-- Display Classes -->
+  <div>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus <span class="inline font-bold">This is
+      inline</span> numquam deserunt repellat hic, laborum
+    consequuntur facilis accusamus <span class="block font-bold">block text</span> aut alias neque voluptates. Nobis
+    ratione voluptate, quod temporibus repudiandae sint
+    reiciendis. Soluta in expedita <span class="inline-block font-bold">inline block</span> illo ipsa deleniti dolor hic
+    sunt fuga consectetur doloremque? Recusandae quidem
+    nemo, molestiae doloribus illum rerum fugiat blanditiis harum quia nihil dolorem quis quisquam provident voluptate.
+    Dolores, exercitationem?
+  </div>
 
-    <!-- Z-Index -->
+  <!-- Z-Index -->
+  <div class="relative h-48 flex">
+    <div class="absolute h-8 w-60 bg-blue-300 left-20 z-10">Box-1</div>
+    <div class="absolute h-8 w-60 bg-blue-500 left-40 z-30">Box-2</div>
+    <div class="absolute h-8 w-60 bg-blue-600 left-60">Box-3</div>
+    <div class="absolute h-8 w-60 bg-blue-700 left-80">Box-4</div>
+  </div>
 
-    <!-- Floats -->
-  </body>
+  <!-- Floats -->
+  <div class="w-1/2">
+    <img src="../assets/img/img1.jpg" class="h-48 w-48 float-right m-4" alt="laptop">
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, consequuntur sit, eum repudiandae provident modi
+      similique quas rerum ut dolore harum necessitatibus totam ipsum reiciendis adipisci assumenda commodi saepe.
+      Aspernatur dolorum porro vero quam? Adipisci molestias voluptate aliquid minus optio similique nulla esse eaque
+      incidunt quidem sapiente suscipit delectus autem dolores earum illo sint illum asperiores, qui ratione cupiditate
+      nihil?
+    </p>
+  </div>
+</body>
+
 </html>
 
 <!-- Position Classes

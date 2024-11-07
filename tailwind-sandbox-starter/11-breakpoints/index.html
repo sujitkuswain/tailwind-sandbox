@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Breakpoints & Media Queries</title>
-  </head>
-  <!-- Tailwind is mobile-first -->
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Breakpoints & Media Queries</title>
+</head>
+<!-- Tailwind is mobile-first -->
+
+<body class="bg-black sm:bg-red-900 md:bg-blue-900 lg:bg-green-900 xl:bg-yellow-900 2xl:bg-red-900">
+  <h1 class="text-white sm:text-sm md:text-md lg:text-lg xl:text-xl"></h1>
+  <script>
+    /*************  ✨ Codeium Command ⭐  *************/
+    /**
+     * Updates the text content of the first <h1> element with the current 
+     * width of the browser window in pixels. This function is triggered 
+     * on page load and whenever the window is resized.
+     */
+    /******  748451d1-c308-4433-aedf-efb9a7878564  *******/
+    function showScreenSize() {
+      const currSize = window.innerWidth
+      document.querySelector('h1').innerText = `Current width: ${currSize}px`
+    }
+    window.onload = showScreenSize
+    window.onresize = showScreenSize
+  </script>
+</body>
+
 </html>
 
 <!-- Breakpoint Classes

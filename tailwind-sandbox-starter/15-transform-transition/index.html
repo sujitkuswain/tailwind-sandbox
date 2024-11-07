@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Transform & Transition</title>
-  </head>
-  <body>
-    <!-- No Transition -->
-    <button
-      class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700"
-    >
-      Click me
-    </button>
 
-    <!-- Transition -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Transform & Transition</title>
+</head>
 
-    <!-- Transition & Transform -->
+<body>
+  <!-- No Transition -->
+  <button class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700">
+    Click me
+  </button>
 
-    <!-- Transform & Transition -->
-  </body>
+  <!-- Transition -->
+  <button
+    class="px-8 py-2 m-24 text-white bg-blue-500 transition hover:opacity-50 duration-1000 rounded hover:bg-red-700">
+    Click me
+  </button>
+
+  <!-- Transition & Transform -->
+  <button class="px-8 py-2 m-24 text-white bg-blue-500 hover:scale-150 transition duration-500 rounded">
+    Click me
+  </button>
+
+  <img src="../assets/img/img1.jpg" alt="laptop"
+    class="w-60 h-60 border border-red-900 rounded-xl hover:scale-150 transition opacity-50 hover:opacity-100 duration-500 mx-auto">
+
+  <!-- Transform & Transition -->
+</body>
+
 </html>
 
 <!-- Transition Property
